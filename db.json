@@ -1,1 +1,66 @@
-{}
+{
+  "equipes": [
+    {
+      "id": "1",
+      "nom": "Equipe 1",
+      "natif": "Senior"
+    },
+    {
+      "id": "2",
+      "nom": "Equipe 2",
+      "natif": "Junior"
+    },
+    {
+      "id": "3",
+      "nom": "Equipe 3",
+      "natif": "Senior"
+    },
+    {
+      "id": "4",
+      "nom": "Equipe 4",
+      "natif": "Junior"
+    }
+  ],
+  "matches": [
+    {
+      "id": "8ac0",
+      "equipeA": "Equipe 1",
+      "equipeB": "Equipe 2",
+      "date": "2025-01-07",
+      "heure": "11:54",
+      "lien": "tunis"
+    },
+    {
+      "id": "add8",
+      "equipeA": "Equipe 1",
+      "equipeB": "Equipe 4",
+      "date": "2025-01-08",
+      "heure": "22:56",
+      "lien": "tunis"
+    },
+    {
+      "id": "b448",
+      "equipeA": "Equipe 1",
+      "equipeB": "Equipe 3",
+      "date": "2025-01-15",
+      "heure": "11:03",
+      "lien": "tunis"
+    },
+    {
+      "id": "fb1f",
+      "equipeA": "Equipe 1",
+      "equipeB": "Equipe 3",
+      "date": "2025-01-07",
+      "heure": "01:08",
+      "lien": "tunis"
+    },
+    {
+      "id": "45ac",
+      "equipeA": "Equipe 1",
+      "equipeB": "Equipe 3",
+      "date": "2025-01-07",
+      "heure": "01:08",
+      "lien": "tunis"
+    }
+  ]
+}

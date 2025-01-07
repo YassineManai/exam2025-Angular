@@ -1,0 +1,43 @@
+<p>match works!</p>
+
+<form (ngSubmit)="onSubmit()" #matchForm="ngForm">
+  <div *ngIf="errorMessage" class="error">
+    {{ errorMessage }}
+  </div>
+
+  <label for="equipeA">Equipe A:</label>
+  <select id="equipeA" [(ngModel)]="equipeA" name="equipeA" required #equipeAField="ngModel">
+    <option *ngFor="let equipe of equipes" [value]="equipe.nom">{{ equipe.nom }}</option>
+  </select>
+  <div *ngIf="equipeAField.invalid && equipeAField.touched" class="error">
+    Ce champ est obligatoire.
+  </div>
+
+  <label for="equipeB">Equipe B:</label>
+  <select id="equipeB" [(ngModel)]="equipeB" name="equipeB" required #equipeBField="ngModel">
+    <option *ngFor="let equipe of equipes" [value]="equipe.nom">{{ equipe.nom }}</option>
+  </select>
+  <div *ngIf="equipeBField.invalid && equipeBField.touched" class="error">
+    Ce champ est obligatoire.
+  </div>
+
+  <label for="date">Date:</label>
+  <input type="date" id="date" [(ngModel)]="date" name="date" required #dateField="ngModel">
+  <div *ngIf="dateField.invalid && dateField.touched" class="error">
+    Ce champ est obligatoire.
+  </div>
+
+  <label for="heure">Heure:</label>
+  <input type="time" id="heure" [(ngModel)]="heure" name="heure" required #heureField="ngModel">
+  <div *ngIf="heureField.invalid && heureField.touched" class="error">
+    Ce champ est obligatoire.
+  </div>
+
+  <label for="lien">Lien:</label>
+  <input type="text" id="lien" [(ngModel)]="lien" name="lien" required #lienField="ngModel">
+  <div *ngIf="lienField.invalid && lienField.touched" class="error">
+    Ce champ est obligatoire.
+  </div>
+
+  <button type="submit" [disabled]="matchForm.invalid">Soumettre</button>
+</form>
